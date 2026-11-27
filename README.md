@@ -1,36 +1,33 @@
-# 幻熊 · 婚礼旅拍配色师
+# 幻熊 · 婚礼与旅拍配色师
 
-为婚礼摄影、场布提案和目的地旅拍设计一套从现场到成片都能核对的颜色。给它场景、服装和想表达的情绪，就能得到主辅配色、分段色彩剧本，以及每段独立可用的图像和视频提示词。
+从 **30 位电影导演与摄影指导**的作品里，挑一套现场拍得出来的婚礼或旅拍配色。每位大师有一张卡，写明三个颜色分别放在哪里、主光从哪边来，以及如何保住两位新人的肤色、婚纱纹理和深色礼服的层次。
 
-## 从一个现场开始
+[下载 v2.0.0 安装包](https://github.com/HaloBear-AI/skill-wedding-travel-colorist/releases/download/v2.0.0/wedding-travel-colorist-v2.0.0.zip) · [打开 30 位大师选卡表](wedding-travel-colorist/references/film-cards.md) · [下载 Excel 配色速查表](https://github.com/HaloBear-AI/skill-wedding-travel-colorist/releases/download/v2.0.0/wedding-palettes.xlsx)
 
-> 用 $wedding-travel-colorist 为贵州肇兴侗寨的一对新人做三段旅拍。新娘穿象牙白裙，新郎穿靛青棉外套，带一把深茶色布伞。两人从清晨石阶走过午后木廊，到暮色灯下渐渐并肩。请给出配色方案、分段剧本、每段的图像和视频提示词，并准备雨天替代光线。
+## 怎么选
 
-查看[贵州侗寨完整示例](wedding-travel-colorist/examples/guizhou-dong-village.md)，可直接比较同一段用于静帧和运动镜头的两种写法。
-
-## 输出
-
-| 交付项 | 内容 |
+| 面前的场景 | 可以从哪张卡开始 |
 | --- | --- |
-| 配色方案 | 主色、辅色、点缀色与实际载体，饱和度、反差、黑位与高光。分清花材、服装等实物色和灯光造成的呈现色。 |
-| 分段色彩剧本 | 每段的人物动作、情绪、主光、光色变化及与下一段的衔接。 |
-| 图像与视频提示词 | 静帧给出时刻、构图与细节，视频给出起幅、人物动作、运镜和落幅。可指定中文、英文或双语。 |
-| 修订意见 | 针对婚纱高光、彩灯串色、暗部粘连或前后镜头漂色，给出可用一张样片核对的修改。 |
+| 家中备婚，母亲在窗边替女儿整理头纱 | [是枝裕和《海街日记》](wedding-travel-colorist/references/daylight.md#look-01)。让窗光托住两个人的脸，保留木柜与白纱间的色差。 |
+| 红丝绒宴会厅，暖壁灯和绿色玻璃同框 | [王家卫《花样年华》](wedding-travel-colorist/references/celebration.md#look-11)。红绿分给两处实物，控制从帘子反到脸上的红光。 |
+| 阴天海岸，风吹动浅色裙摆 | [克莱尔·马松《燃烧女子的肖像》](wedding-travel-colorist/references/destination.md#look-24)。用海天与衣料的明度差勾出人物，保留裙面受风的褶纹。 |
 
-## 安装与配置
+全套卡按[亲密婚礼与柔光人像](wedding-travel-colorist/references/daylight.md)、[庆典与婚礼设计色](wedding-travel-colorist/references/celebration.md)、[目的地与时刻](wedding-travel-colorist/references/destination.md)分组，每组 10 人。表格中的色样可用来商量花材、服装、布景和画面效果，拍摄与调色时以实际人物和材质为准。
 
-下载仓库 ZIP 并解压，或运行下面的命令克隆仓库。将其中的 `wedding-travel-colorist` 文件夹放入使用项目的 `.agents/skills/`，目录应为 `.agents/skills/wedding-travel-colorist/SKILL.md`。在该项目开启新的 Codex 会话即可调用。
+## 安装与调用
 
-```sh
-git clone https://github.com/HaloBear-AI/skill-wedding-travel-colorist.git
-```
+下载上方安装包并解压。把内层 `wedding-travel-colorist` 文件夹放进项目的 `.agents/skills/`，确保入口是 `.agents/skills/wedding-travel-colorist/SKILL.md`。在该项目开启新的 Codex 会话，输入下面的简报即可。也可克隆本仓库，从仓库根目录取同名文件夹。
 
-文字方案可由支持 Skill 的助手直接完成，无需安装依赖或配置 API 密钥。制作实际影像时，可将提示词交给你选用的图像或视频生成工具；摄影和后期团队也可以拿色彩剧本与现场样片逐项对照。
+> 用 $wedding-travel-colorist 给一场庭院婚礼选配色。上午在红木厅敬茶，新人穿红色秀禾服和深蓝西装。傍晚换象牙白纱到花园跳第一支舞。选一位电影大师作为主参考，给两段各自的三色和用光，并告诉摄影师怎么看出红绣线和白纱都拍出了纹理。
 
-## 参考来源与幻熊编写内容
+想要旅拍分镜时，加上行程、时刻和天气。需要出图或生成视频时，指定画幅、时长和提示词语言。文字方案由宿主助手完成，Skill 无需配置密钥或安装脚本。速查表可离线使用。实际生成影像时，将提示词交给所选的影像工具。
 
-电影参考的选片与五维配色方法源于磨坊主 Miller《N°09 大师配色包》。幻熊保留了 15 位创作者与代表影片的对应关系，重新编写电影光色解读、婚礼及旅拍适配和镜头建议。现场选色、跨镜头连续性、天气替代方案和贵州侗寨案例由幻熊为本 Skill 编写。
+## 交付示例
 
-- [15 张电影参考卡](wedding-travel-colorist/references/film-cards.md)
-- [婚礼与旅拍现场配色](wedding-travel-colorist/references/scene-recipes.md)
-- [Skill 入口](wedding-travel-colorist/SKILL.md)
+- [婚礼《从敬茶到第一支舞》](wedding-travel-colorist/examples/tea-to-first-dance.md)有两段色板、现场动作、肤色验收，以及静帧和视频提示词。
+- [贵州侗寨旅拍《一把布伞》](wedding-travel-colorist/examples/guizhou-dong-village.md)沿三段光线跟拍同一对新人，附雨天替代方案和逐段提示词。
+- [现场配色与纠偏](wedding-travel-colorist/references/scene-recipes.md)可按宴会厅混光、草地反绿、沙滩白纱或霓虹染肤查到处理方法。
+
+## 编写与来源
+
+五维配色方法参考磨坊主 Miller 的《N°09 大师配色包》。幻熊为婚礼与旅拍重新选片，编写了 30 张实拍配色卡、现场处方与示例。片名和职务的出处列在每张卡尾，色号为本项目设计的 sRGB 提案色样。
