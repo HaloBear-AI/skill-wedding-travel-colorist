@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 258" width="840" height="258" role="img" aria-labelledby="t d">
+  <title id="t">一把布伞 · 三场色彩剧本</title>
+  <desc id="d">从清晨的雾蓝灰，经过午后湿木褐，到暮蓝中的琥珀灯光。每行从左至右为主色、辅色与点缀色。</desc>
+  <rect width="840" height="258" fill="#F5F0E8" />
+  <text x="21" y="55" font-family="system-ui,sans-serif" font-size="22" fill="#3B312B">清晨</text>
+  <rect x="92" y="18" width="390" height="61" fill="#9EAEB0" />
+  <rect x="487" y="18" width="225" height="61" fill="#796356" />
+  <rect x="717" y="18" width="101" height="61" fill="#E9E2D5" />
+  <text x="21" y="135" font-family="system-ui,sans-serif" font-size="22" fill="#3B312B">午后</text>
+  <rect x="92" y="98" width="390" height="61" fill="#59483E" />
+  <rect x="487" y="98" width="225" height="61" fill="#89979A" />
+  <rect x="717" y="98" width="101" height="61" fill="#CDD1CB" />
+  <text x="21" y="215" font-family="system-ui,sans-serif" font-size="22" fill="#3B312B">暮色</text>
+  <rect x="92" y="178" width="390" height="61" fill="#364D65" />
+  <rect x="487" y="178" width="225" height="61" fill="#534539" />
+  <rect x="717" y="178" width="101" height="61" fill="#D99B5F" />
+</svg>
