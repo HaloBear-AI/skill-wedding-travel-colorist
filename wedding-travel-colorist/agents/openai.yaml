@@ -1,4 +1,4 @@
 interface:
-  display_name: "幻熊 · 婚礼旅拍配色师"
-  short_description: "为婚礼和目的地旅拍编排分段光色，输出配色方案、图像和视频提示词"
-  default_prompt: "用 $wedding-travel-colorist 为我的婚礼或旅拍场景设计配色方案、分段色彩剧本，以及每段可直接使用的图像和视频提示词。"
+  display_name: "幻熊 · 婚礼与旅拍配色师"
+  short_description: "按婚服与现场光从 30 位电影大师中选参考，设计婚礼和目的地旅拍配色"
+  default_prompt: "用 $wedding-travel-colorist 按婚服、人物肤色和现场光选一位电影大师，给出婚礼或旅拍的三色方案、用光和调色验收要点。"
